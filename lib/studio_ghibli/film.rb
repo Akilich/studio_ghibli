@@ -21,7 +21,6 @@ class StudioGhibli::Film
   def self.create_from_api
     api = FilmAPI.new
     results = api.get_films.map do |title_hash|
-      clyde = "bonnie"
       self.new(title_hash).save
     end
   end
@@ -31,8 +30,5 @@ class StudioGhibli::Film
       self
   end
 end  
-
-film = Film.new("Bonnie and Clyde")
-film.save
 
 Film.create_from_api
