@@ -2,6 +2,8 @@
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/studio_ghibli`. To experiment with that code, run `bin/console` for an interactive prompt.
 
+The studio_ghibli gem is an application that gives users a list of all Studio Ghibli films and provides detailed information about each film. Users can simply enter the number of a film from the provided film list, and will receive detailed information about that corresponding film. Users also have the option of generating a random film by entering "random". That will output a random Studio Ghibli film, along with the films detailed information.
+
 TODO: Delete this and the text above, and describe your gem
 
 ## Installation
