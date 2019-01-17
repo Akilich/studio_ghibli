@@ -1,15 +1,16 @@
-class StudioGhibliController 
+class StudioGhibli::StudioGhibliController 
   
   def call
     puts "Welcome to the Studio Ghibli Movie Generator!"
     puts "To see information about a film, enter the film number from the list below."
     list_films
+    self
     menu
   end
 
   def list_films
     puts "-All Studio Ghibli Films-"
-    @films = Film.all
+    @films = StudioGhibli::Film.all
     @films.each.with_index do |film, i|
       puts "#{i+1}. #{film.title}"
     end
@@ -52,7 +53,7 @@ class StudioGhibliController
   end
 
   def generate_random_film
-    film = Film.all.sample
+    film = StudioGhibliController::Film.all.sample
     puts " TITLE: " "#{film.title}"
     puts " RELEASE DATE:"  " #{film.release_date}"
     puts " DIRECTOR:"  " #{film.director}"

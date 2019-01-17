@@ -1,3 +1,4 @@
 #!/usr/bin/env ruby
-require_relative '../lib/Ghibli_cli'
-StudioGhibliController.new.call
+require_relative '../lib/studio_ghibli'
+controller = StudioGhibli::StudioGhibliController.new
+controller.call
